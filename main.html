@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" contents="width=device-width,intial-scale=1.0">
+	<title>fast and furious serise</title>
+	<link href="https://fonts.googleapis.com/css?family=Contrail+One|Faster+One|Racing+Sans+One|Timmana" rel="stylesheet">
+	<style>
+		*{margin: 0; padding: 0; box-sizing: border-box;}
+		ul, ol {list-style: none;}
+		a {text-decoration: none; color: white;}
+		body {background: url('background.jpg'); width: 1920px; margin:0 auto; background-size: cover;}
+		header {width: 1920px; height: 150px; margin:0 auto; margin-top: 100px; position: relative;}
+		header .contain {position: relative;  }
+		header .contain .logo {width: 384px; height: 150px; margin: 0 auto; left: 50%; transform: translateX(-50%);}
+		header .contain li a:hover {color:#760809;}
+		header .contain img {width: 384px;}
+		header ul {position: absolute; top: 0; font-family: 'Timmana', sans-serif; font-weight: bold;}
+		header .menu2 {right: 0;}
+		header ul li {list-style: none; float: left; width: 384px; font-size: 30px; text-align: center; line-height: 150px;}
+		.carousel {width: 1000px; height: 700px; margin:0 auto; position: relative;}
+		.carousel img {width: 400px; border: 5px solid #760809;}
+	</style>
+	
+</head>
+<body>
+	<header>
+		<div class="contain">
+			<ul class=logo>
+				<li>
+					<a href="main.html">
+						<img src="logo.png">
+					</a>
+				</li>
+			</ul>	
+			<ul class="menu1">
+				<li class="menu-title">
+					<a href="s1.html">Director</a>
+				</li>
+				<li class="menu-title">
+					<a href="s3.html">Actors</a>	
+				</li>
+			</ul>
+			<ul class="menu2">	
+				<li class="menu-title">
+					<a href="s2.html">Car</a>
+				</li>
+				<li class="menu-title">
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="carousel">
+		<a href="ss1.html">
+			<img src="images/ff-1.jpg" id="item-1.jpg">
+		</a>
+		<a href="ss2.html">
+			<img src="images/ff-2.jpg" id="item-2.jpg">
+		</a>
+		<a href="ss3.html">
+			<img src="images/ff-3.jpg" id="item-3.jpg">
+		</a>
+		<a href="ss4.html">
+			<img src="images/ff-4.jpg" id="item-4.jpg">
+		</a>
+		<a href="ss5.html">
+			<img src="images/ff-5.jpg" id="item-5.jpg">
+		</a>
+		<a href="ss6.html">
+			<img src="images/ff-6.jpg" id="item-6.jpg">
+		</a>
+		<a href="ss7.html">
+			<img src="images/ff-7.jpg" id="item-7.jpg">
+		</a>
+		<a href="ss8.html">
+			<img src="images/ff-8.jpg" id="item-8.jpg">
+		</a>
+		
+	</div>		
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" ></script>
+	<script type="text/javascript" src="jquery.waterwheelCarousel.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var carousel = $ (".carousel").waterwheelCarousel({
+				flankingitems : 1
+				});
+			});
+	</script>
+
+</body>
+</html>
