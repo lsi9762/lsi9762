@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Fast and furious director</title>
+	<link href="https://fonts.googleapis.com/css?family=Contrail+One|Faster+One|Racing+Sans+One|Timmana" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<style>
+		*{margin: 0; padding: 0;}
+		ul, ol {list-style: none;}
+		a {text-decoration: none; color: white;}
+		body {background: url("background.jpg"); width: 100%; margin: 0 auto; background-attachment: fixed; background-size: cover;}
+		header {width: 1920px; height: 150px; margin:0 auto; margin-top: 100px; position: relative;}
+		header .contain {position: relative;  }
+		header .contain .logo {width: 384px; height: 150px; margin: 0 auto; left: 50%; transform: translateX(-50%);}
+		header .contain li a:hover {color:#760809;}
+		header .contain img {width: 384px;}
+		header ul{position: absolute; top: 0; font-family: 'Timmana', sans-serif; font-weight: bold;}
+		header .menu2 {right: 0;}
+		header ul li {list-style: none; float: left; width: 384px; font-size: 30px; text-align: center; line-height: 150px;}
+
+		.d1 {width: 1000px; margin:0 auto; position: relative; top: 120px;}
+		.d1 .i1 {width: 1000px; position: absolute; margin: 0 auto; }
+		.d1 .name {width: 400px; height: 160px; position: absolute; left: 50px; top: 100px; font-size: 60px;  font-family: 'Timmana', sans-serif; color: white; }
+		.d1 .textwrap {width: 400px; height: 800px; position: absolute; top: 200px; left: 50px; font-size: 18px; text-align: justify; font-family: 'Open Sans', sans-serif; color: white; }
+		.d1 .contain2 {background: white; width: 80px; height: 30px; position: absolute; margin: 0 auto; left: 320px; border-radius: 10px; top: 130px; font-size: 16px; text-align: center; color:#760809; font-family: 'Open Sans', sans-serif; font-weight: bolder; line-height: 30px;}
+
+
+		.d2 {width: 1000px; margin:0 auto; position: relative; top: 780px;}
+		.d2 .i2 {width: 1000px; position: absolute; margin: 0 auto; }
+		.d2 .name {width: 400px; height: 160px; position: absolute; left: 50px; top: 100px; font-size: 60px;  font-family: 'Timmana', sans-serif; color: white; line-height: 70px; }
+		.d2 .textwrap {width: 300px; height: 800px; position: absolute; top: 100px; left: 650px; font-size: 18px; text-align: justify; font-family: 'Open Sans', sans-serif; color: white; }
+		.d2 .contain2 {background: white; width: 80px; height: 30px; position: absolute; margin: 0 auto; left: 50px; border-radius: 10px; top: 260px; font-size: 16px; text-align: center; color:#760809; font-family: 'Open Sans', sans-serif; font-weight: bolder; line-height: 30px;}
+
+		.d3 {width: 1000px; margin:0 auto; position: relative; top: 1340px;}
+		.d3 .i3 {width: 1000px; position: absolute; margin: 0 auto; }
+		.d3 .name {width: 400px; height: 160px; position: absolute; left: 50px; top: 100px; font-size: 60px;  font-family: 'Timmana', sans-serif; color: white; }
+		.d3 .textwrap {width: 450px; height: 800px; position: absolute; top: 200px; left:50px; font-size: 18px; text-align: justify; font-family: 'Open Sans', sans-serif; color: white; }
+		.d3 .contain2 {background: white; width: 80px; height: 30px; position: absolute; margin: 0 auto; left: 320px; border-radius: 10px; top: 130px; font-size: 16px; text-align: center; color:#760809; font-family: 'Open Sans', sans-serif; font-weight: bolder; line-height: 30px;}
+
+		.d4 {width: 1000px; margin:0 auto; position: relative; top: 2000px;}
+		.d4 .i4 {width: 1000px; position: absolute; margin: 0 auto; }
+		.d4 .name {width: 400px; height: 160px; position: absolute; left:700px; top: 100px; font-size: 60px;  font-family: 'Timmana', sans-serif; color: white; }
+		.d4 .textwrap {width: 400px; height: 800px; position: absolute; top: 180px; left:550px; font-size: 18px; text-align: justify; font-family: 'Open Sans', sans-serif; color: white; }
+		.d4 .contain2 {background: white; width: 80px; height: 30px; position: absolute; margin: 0 auto; left: 600px; border-radius: 10px; top: 130px; font-size: 16px; text-align: center; color:#760809; font-family: 'Open Sans', sans-serif; font-weight: bolder; line-height: 30px;}
+
+		.d5 {width: 1000px; margin:0 auto; position: relative; top: 2660px;}
+		.d5 .i5 {width: 1000px; position: absolute; margin: 0 auto; }
+		.d5 .name {width: 400px; height: 160px; position: absolute; left: 50px; top: 100px; font-size: 60px;  font-family: 'Timmana', sans-serif; color: white; }
+		.d5 .textwrap {width: 400px; height: 200px; position: absolute; top: 200px; left:50px; font-size: 18px; text-align: justify; font-family: 'Open Sans', sans-serif; color: white; }
+		.d5 .contain2 {background: white; width: 80px; height: 30px; position: absolute; margin: 0 auto; left: 360px; border-radius: 10px; top: 135px; font-size: 16px; text-align: center; color:#760809; font-family: 'Open Sans', sans-serif; font-weight: bolder; line-height: 30px;}
+
+		footer {background: #760809; width: 100%; height: 50px; margin: 0 auto; position: relative; top: 620px; font-family: 'Open Sans', sans-serif; color: white; font-size: 25px; text-align: center; line-height: 50px; font-weight: bold;}
+		
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<div class="contain">
+			<ul class=logo>
+				<li>
+					<a href="main.html">
+						<img src="logo.png">
+					</a>
+				</li>
+			</ul>	
+			<ul class="menu1">
+				<li class="menu-title">
+					<a href="s1.html">Director</a>
+				</li>
+				<li class="menu-title">
+					<a href="s3.html">Actors</a>	
+				</li>
+			</ul>
+			<ul class="menu2">	
+				<li class="menu-title">
+					<a href="s2.html">Car</a>
+				</li>
+				<li class="menu-title">
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+		<div class="d1">
+			<img class="i1" src="d1.png">
+			<div class="name">Rob Cohen</div>
+			<div class="textwrap">
+				<p>Rob Cohen is an American film director, producer and screenwriter. One of the 1970's "baby moguls", he built a thriving career as a producer, before concentrating full time on directing from the 1990's, with high adrenaline action blockbusters such as xXx (2002) and Dragon: The Bruce Lee Story (1993). He is the creator of The Fast and the Furious (2001), Universal Pictures' biggest franchise of all time.</p>
+			</div>
+			<div class="contain2">more</div>
+		</div>
+		<div class="d2">
+			<img class="i2" src="d2.png">
+			<div class="name">John<br>SingleTone</div>
+			<div class="textwrap">
+				<p> John Singleton attended the Film Writing Program at USC after graduating from high school in 1986. While studying there, he won three writing awards from the university, which led to a contract with Creative Artists Agency during his sophomore year. Columbia Pictures bought his script for Boyz n the Hood (1991) and budgeted it at $7 million.</p>
+			</div>
+			<div class="contain2">more</div>
+		</div>
+
+		<div class="d3">
+			<img class="i3" src="d3.png">
+			<div class="name">Justin Lin</div>
+			<div class="textwrap">
+				<p> Justin Lin is a Taiwanese American film director whose films have grossed $2 billion worldwide. He is best known for his work on Better Luck Tomorrow, The Fast and the Furious 3-6 and Star Trek Beyond. He attended Cypress High School and University of California, San Diego for two years before transferring to UCLA, where he earned a BA in Film & Television and a MFA in Film Directing and Production from the UCLA Film School.</p>
+			</div>
+			<div class="contain2">more</div>
+		</div>
+
+		<div class="d4">
+			<img class="i4" src="d4.png">
+			<div class="name">James Wan</div>
+			<div class="textwrap">
+				<p> James Wan (born 26 February 1977) is an Australian film producer, screenwriter and film director of Malaysian Chinese descent. He is widely known for directing the horror film Saw (2004) and creating Billy the puppet. Wan has also directed Dead Silence (2007), Death Sentence (2007), Insidious (2010), The Conjuring (2013) and Furious Seven (2015).<br>
+				Before his success in the mainstream film industry, he made his first feature-length film, Stygian, with Shannon Young, which won "Best Guerrilla Film" at the Melbourne Underground Film Festival (MUFF) in 2000.</p>
+			</div>
+			<div class="contain2">more</div>
+		</div>
+
+		<div class="d5">
+			<img class="i5" src="d5.png">
+			<div class="name">F.Gary gray</div>
+			<div class="textwrap">
+				<p>F. Gary Gray was born on July 17, 1969 in New York City, New York, USA as Felix Gary Gray. He is a director and actor, known for Set It Off (1996), The Italian Job (2003) and The Negotiator (1998).
+				At the 1995 MTV Music Video Awards, he won Best Video of the Year for Directing the TLC's "Waterfalls" video.</p>
+			</div>
+			<div class="contain2">more</div>
+		<div class="contain3"></div>
+		<footer>FAST AND FURIOUS</footer>
+
+</body>
+</html>
