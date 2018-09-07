@@ -4,13 +4,17 @@
 	<title>기초대사량 계산기</title>
 	<style>
 		.wrap {border:1px solid #000000; width: 600px; text-align: center; position: relative; margin: 300px auto; padding: 10px; }
-		.radiobox {margin: 10px 0px;}
-		button {position: absolute; right: 10px; top: 12px; background: none; border:1px solid #000000;}
+		.radiobox {margin: 20px 0px;}
+		button {position: absolute; right: 20px; top: 54.5px; background: none; border:1px solid #000000;}
 		article {margin: 20px;}
+		p {font-size: 1.0em; font-weight: bolder; margin: 0 auto; padding-top:10px; padding-bottom: 10px;}
+		
 	</style>
 </head>
 <body>
+	
 	<div class="wrap">
+		<p>기초대사량 계산기</p>
 		<input type="text" placeholder="몸무게" id="weight">
 		<input type="text" placeholder="키" id="height">
 		<input type="text" placeholder="나이" id="age">
@@ -28,17 +32,17 @@
 
 		<article>
 		</article>
-		<p style="font-size:.7em">출처 : http://u-health.dobong.go.kr/hcal/metabolism.asp</p>
+
 	</div>
 
 	<script>
 					function cal(){
 						document.querySelector("article").innerHTML="Hello";
-							if(woman.checked) {
-								cc=655.1+(9.56*weight.value)+(1.85*height.value)-(4.68*age.value);
+							if(woman.checked){
+								cc = 655.1+(9.56*weight.value)+(1.85*height.value)-(4.68*age.value);
 								document.querySelector("article").innerHTML="기초대사량 : "+Math.round(cc)+"cal";
-					}else if (man.checked) {
-						cc=66.47+(13.75*weight.value)+(5*height.value)-(6.76*age.value);
+					}else if(man.checked){
+						cc = 66.47+(13.75*weight.value)+(5*height.value)-(6.76*age.value);
 						document.querySelector("article").innerHTML="기초대사량 : "+Math.round(cc)+"cal";
 					}
 				}
