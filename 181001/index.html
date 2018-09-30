@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minions</title>
+	<style>
+		#m9 {width: 350px; position: relative; left: 50%; transform: translateX(-50%);} 
+		#m8 {width: 350px; position: relative; left: 50%; transform: translateX(-50%); opacity: 0;
+			animation-play-state : paused;
+			animation : example 8s linear infinite;}
+			@keyframes example {
+				from {left: 0px;}
+				to {left : 1500px;}  
+				}
+		
+		.contain1 {background: #fdfcf0; width: 1900px; height: 300px; position: relative;}
+		.contain1 #m2 {width: 200px; top: 60px; position: absolute; left: 400px; }
+		.contain1 #m3 {width: 200px; top: 60px; position: absolute; left: 400px; transition: opacity ease 1s;}
+		.contain1 #m4 {width: 250px; position: absolute; left: 1300px; top: 50px;}
+		.contain1 #m5 {width: 250px; position: absolute; left: 1300px; top: 50px; transition: opacity ease 1s;}
+		.contain1 #m6 {width: 600px; position: absolute; left: 50%; transform: translateX(-50%); }
+		#m7 {width: 400px; position: relative; left: 50%; transform: translateX(-50%);}
+		#minions {width: 500px; position: absolute; opacity: 0; left: 50%; transform: translateX(-50%); }
+		
+	</style>
+</head>
+<body>
+	<img id="m9" onclick=k()  src="mini5.gif">
+	<img id="m8" style="animation-play-state:running;"  src="mini5.gif">
+	<audio id="minisound3" src="minis3.mp3"></audio>
+	<div class="contain1">
+		<img id="m2" src="mini1.png">
+		<img onclick=a() id="m3" src="gmini1.png">
+		<img id="m4" src="mini2.png">
+		<img onclick=b() id="m5" src="gmini2.png">
+		<img  id="m6" src="miniall.png">
+		<audio id="minisound1" src="minis1.mp3"></audio>
+		<audio id="minisound2" src="minis2.mp3"></audio>
+		<video onclick=c() id="minions" src="minimv.mp4"></video>
+	</div>
+	<div class="contain3">
+		<img id="m7" src="mini7.png">
+	</div>
 
+	<script type="text/javascript">
+		var i = 0;
+		function a(){
+			i= i+1;
+			if (i%2==1) {
+				m3.style.opacity = 0;
+				minisound1.play();
+		 	}
+			else if (i%2==0) {
+				m3.style.opacity = 1;
+				minisound1.pause();
+		 	}
+		};
+		
+		var l = 0;
+		function b(){
+			l= l+1;
+			if (l%2==1) {
+				m5.style.opacity = 0;
+				minisound2.play();
+		 	}
+			else if (l%2==0) {
+				m5.style.opacity = 1;
+				minisound2.pause();
+		 	}
+		};
+
+		var u = 0;
+		function c(){
+			u= u+1;
+			if (u%2==1) {
+				minions.style.opacity = 1;
+				minions.play();
+		 	}
+			else if (u%2==0) {
+				minions.style.opacity = 0;
+				minions.pause();
+		 	}
+		};
+		
+		var e = 0;
+		function k(){
+			e= e+1;
+			if (e%2==1) {
+				m9.style.opacity = 1;
+				m8.style.opacity = 0;
+				m8.animationPlayState = "paused";
+				minisound3.pause();
+		 	}
+			else if (e%2==0) {
+				m9.style.opacity = 0;
+				m8.style.opacity = 1;
+				m8.animationPlayState = "running";
+				minisound3.play();
+		 	}
+			
+		};
+	
+	</script>
+</body>
+</html>
