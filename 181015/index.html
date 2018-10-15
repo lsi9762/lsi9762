@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<meta charset="utf-8">
+
+	<title>warning</title>
+
+	<style type="text/css">
+
+		body {background: black;}
+		img {width: 100%; animation: blink normal 1s infinite ease-in-out; position: absolute;}
+
+		
+		@keyframes blink{
+			0%{opacity: 1;}
+			20% {opacity: 0; }
+			40% {opacity: 1; }
+			60% {opacity: 0; }
+			80% {opacity: 1; }
+			100% {opacity: 0;}
+			}
+
+		#box1 {width: 10px; height: 10px; position: absolute; left: 50%; top: 50%;
+			transform: translateX(-50%) translateY(-50%); opacity: 0; color: white; transition: all 3s ease; font-family: 'Anton', sans-serif; font-size: 150px; 
+			animation: mov1 4s ease infinite; animation-delay: 2s;}
+			
+			@keyframes mov1{
+				0%{top:40px; opacity: 0;}
+				100% {left: 600px; top:300px;  opacity: 1}
+			}
+		
+			#box2 {width: 10px; height: 10px; position: absolute; left: 50%; top: 50%;
+			transform: translateX(-40%) translateY(-50%); opacity: 0; color: white; transition: all 3s ease; font-family: 'Anton', sans-serif; font-size: 150px; z-index:2;
+			animation: mov2 4s ease infinite; animation-delay: 2s;}
+			
+			@keyframes mov2{
+				0%{left:-500px;  top:-200px;  opacity: 0;}
+				100% {left:720px; top:300px; opacity: 1}
+			}
+
+			#box3 {width: 10px; height: 10px; position: absolute; left: 50%; top: 50%;
+			transform: translateX(-40%) translateY(-50%); opacity: 0; color: white; transition: all 3s ease; font-family: 'Anton', sans-serif; font-size: 150px; z-index:2;
+			animation: mov3 4s ease infinite; animation-delay: 2s;}
+			
+			@keyframes mov3{
+				0%{left:900px; top:-300px; opacity: 0;}
+				100% {left:805px; top:300px; opacity: 1}
+			}
+
+			#box4 {width: 10px; height: 10px; position: absolute; left: 50%; top: 50%;
+			transform: translateX(-40%) translateY(-50%); opacity: 0; color: white; transition: all 3s ease; font-family: 'Anton', sans-serif; font-size: 150px; z-index:2;
+			animation: mov4 4s ease infinite; animation-delay: 2s;}
+			
+			@keyframes mov4{
+				0%{left:300px; top:600px; opacity: 0;}
+				100% {left:900px; top:300px; opacity: 1}
+			}
+
+			#box5 {width: 10px; height: 10px; position: absolute; left: 50%; top: 50%;
+			transform: translateX(-40%) translateY(-50%); opacity: 0; color: white; transition: all 3s ease; font-family: 'Anton', sans-serif; font-size: 150px; z-index:2;
+			animation: mov5 4s ease infinite; animation-delay: 2s;}
+			
+			@keyframes mov5{
+				0%{left:100px; top:1000px; opacity: 0;}
+				100% {left:1000px; top:300px; opacity: 1}
+			}
+
+			#box6 {width: 10px; height: 10px; position: absolute; left: 50%; top: 50%;
+			transform: translateX(-40%) translateY(-50%); opacity: 0; color: white; transition: all 3s ease; font-family: 'Anton', sans-serif; font-size: 150px; z-index:2;
+			animation: mov6 4s ease infinite; animation-delay: 2s;}
+			
+			@keyframes mov6{
+				0%{left:1300px;top:1000px; opacity: 0;}
+				100% {left:1050px; top:300px; opacity: 1}
+			}
+
+			#box7 {width: 10px; height: 10px; position: absolute; left: 50%; top: 50%;
+			transform: translateX(-40%) translateY(-50%); opacity: 0; color: white; transition: all 3s ease; font-family: 'Anton', sans-serif; font-size: 150px; z-index:2;
+			animation: mov7 4s ease infinite; animation-delay: 2s;}
+			
+			@keyframes mov7{
+				0%{left:1400px;top:-100px; opacity: 0;}
+				100% {left:1130px; top:300px; opacity: 1}
+			}
+	</style>
+</head>
+<body>
+	<img id="warning" src="warning.jpg">
+	<div id="text">
+		<div id="box1" style="left: 100px; top: 300px; animation-delay: 2s;">W</div>
+		<div id="box2" style="left: 50px; top: -80px; animation-delay: 2s;">A</div>
+		<div id="box3" style="left: -150px; top: -80px; animation-delay: 2s;">R</div>
+		<div id="box4" style="left: 10px; top: 200px; animation-delay: 2s;">N</div>
+		<div id="box5" style="left: -800px; top: 200px; animation-delay: 2s;">I</div>
+		<div id="box6" style="left: 20px; top: -20px; animation-delay: 2s;">N</div>
+		<div id="box7" style="left: 30px; top: 200px; animation-delay: 2s;">G</div>
+	</div>
+	
+	
+	
+	<script type="text/javascript">
+		warning.onclick = function(){
+			var text {"WARNING"};
+			var newText = text.split("");
+			for(var i = 0; i < newText.length; i++){
+				var a = document.getElementById('fly-in-text')
+				var b = a.cloneNode(true);
+				b.innerHTML = newText[1];
+				b.style.left = 200*i +"px";
+				b.style.opacity = 1;
+				b.style.animationDelay = i*0.2+"s";
+				document.body.appendChild(b);
+			}
+			box1.style.anmationPlayState = "running";
+			box2.style.anmationPlayState = "running";
+			box3.style.anmationPlayState = "running";
+			box4.style.anmationPlayState = "running";
+			box5.style.anmationPlayState = "running";
+			box6.style.anmationPlayState = "running";
+			box7.style.anmationPlayState = "running";
+
+		}
+	</script>
+
+
+</body>
+</html>
