@@ -1,1 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
 
+	<title>warning</title>
+
+	<style type="text/css">
+
+		body {background: black;}
+
+
+	
+		#w1 {width: 50%; height: 100vh; position: absolute; top:50%; transform: translate(0%,-50%); animation: blink normal 1s infinite ease-in-out; cursor: pointer; transition: all 5s ease;}
+		
+		#w2 {width: 50%; height: 100vh; position: absolute; right: 0; top:50%; transform: translate(0%,-50%); animation: blink normal 1s infinite ease-in-out; cursor: pointer; transition: all 5s ease;}
+		
+		
+
+		@keyframes blink{
+			0%{opacity: 1;}
+			20% {opacity: 0; }
+			40% {opacity: 1; }
+			60% {opacity: 0; }
+			80% {opacity: 1; }
+			100% {opacity: 0;}
+			}
+
+		#box1 {width: 10px; height: 10px; position: absolute; left: 50%; top: 50%;
+			transform: translate(-50%, -50%); opacity: 0; color: white; transition: all 3s ease; font-family: 'Anton', sans-serif; font-size: 150px; 
+			animation: mov1 4s ease forwards; animation-delay: 1s;}
+			
+			@keyframes mov1{
+				0%{top:40px; opacity: 0;}
+				100% {left: 700px; top:350px;  opacity: 1}
+			}
+		
+			#box2 {width: 10px; height: 10px; position: absolute; left: 50%; top: 50%;
+			transform: translateX(-40%) translateY(-50%); opacity: 0; color: white; transition: all 3s ease; font-family: 'Anton', sans-serif; font-size: 150px; z-index:2;
+			animation: mov2 4s ease forwards; animation-delay: 1s;}
+			
+			@keyframes mov2{
+				0%{left:-500px;  top:-200px;  opacity: 0;}
+				100% {left:810px; top:350px; opacity: 1}
+			}
+
+			#box3 {width: 10px; height: 10px; position: absolute; left: 50%; top: 50%;
+			transform: translateX(-40%) translateY(-50%); opacity: 0; color: white; transition: all 3s ease; font-family: 'Anton', sans-serif; font-size: 150px; z-index:2;
+			animation: mov3 4s ease forwards; animation-delay: 1s;}
+			
+			@keyframes mov3{
+				0%{left:900px; top:-300px; opacity: 0;}
+				100% {left:900px; top:350px; opacity: 1}
+			}
+
+			#box4 {width: 10px; height: 10px; position: absolute; left: 50%; top: 50%;
+			transform: translateX(-40%) translateY(-50%); opacity: 0; color: white; transition: all 3s ease; font-family: 'Anton', sans-serif; font-size: 150px; z-index:2;
+			animation: mov4 4s ease forwards; animation-delay: 1s;}
+			
+			@keyframes mov4{
+				0%{left:300px; top:600px; opacity: 0;}
+				100% {left:985px; top:350px; opacity: 1}
+			}
+
+			#box5 {width: 10px; height: 10px; position: absolute; left: 50%; top: 50%;
+			transform: translateX(-40%) translateY(-50%); opacity: 0; color: white; transition: all 3s ease; font-family: 'Anton', sans-serif; font-size: 150px; z-index:2;
+			animation: mov5 4s ease forwards; animation-delay: 1s;}
+			
+			@keyframes mov5{
+				0%{left:100px; top:1000px; opacity: 0;}
+				100% {left:1072px; top:350px; opacity: 1}
+			}
+
+			#box6 {width: 10px; height: 10px; position: absolute; left: 50%; top: 50%;
+			transform: translateX(-40%) translateY(-50%); opacity: 0; color: white; transition: all 3s ease; font-family: 'Anton', sans-serif; font-size: 150px; z-index:2;
+			animation: mov6 4s ease forwards; animation-delay: 1s;}
+			
+			@keyframes mov6{
+				0%{left:1300px;top:1000px; opacity: 0;}
+				100% {left:1120px; top:350px; opacity: 1}
+			}
+
+			#box7 {width: 10px; height: 10px; position: absolute; left: 50%; top: 50%;
+			transform: translateX(-40%) translateY(-50%); opacity: 0; color: white; transition: all 3s ease; font-family: 'Anton', sans-serif; font-size: 150px; z-index:2;
+			animation: mov7 4s ease forwards; animation-delay: 1s;}
+			
+			@keyframes mov7{
+				0%{left:1400px;top:-100px; opacity: 0;}
+				100% {left:1205px; top:350px; opacity: 1}
+			}
+
+		#zombi {width: 1920px; opacity: 0; transition: all 12s ease;}
+
+		#z1 {width: 400px; position: absolute; left: 30%; opacity:0; animation: blink1 normal 20s infinite ease-in-out; cursor:pointer}
+
+		@keyframes blink1 {
+			0%{opacity: 0;}
+			20% {opacity: 1; }
+			40% {opacity: 0; }
+			60% {opacity: 0; }
+			80% {opacity: 1; }
+			100% {opacity: 0;}
+			}
+
+		#z2 {width: 400px; position: absolute; right: 0%; top: 20%; animation: blink2 normal 20s infinite ease-in-out; opacity:0; cursor:pointer}	
+		
+		@keyframes blink2 {
+			0%{opacity: 0;}
+			20% {opacity: 1; }
+			40% {opacity: 1; }
+			60% {opacity: 0; }
+			80% {opacity: 1; }
+			100% {opacity: 1;}
+			}	
+
+		#z3 {width: 400px; position: absolute; left: 10%; animation: mov8 normal 20s infinite ease-in-out; opacity:0; cursor:pointer}
+
+		@keyframes mov8{
+				0%{left:10%; top:10px; opacity: 0;}
+				20% {opacity: 0;}
+				40% {opacity: 1;}
+				60% {opacity: 0;}
+				80% {opacity: 0;}
+				100% {left:40%; top:20%; opacity: 1;}
+			}
+
+		#z4 {width: 400px; position: absolute; left: 10%; animation: mov9 normal 20s infinite ease-in-out; opacity:0; cursor:pointer}
+
+		@keyframes mov9{
+				0%{left: 10%; top:10px; opacity: 0;}
+				20% {opacity: 0;}
+				40% {opacity: 1;}
+				60% {opacity: 0;}
+				80% {opacity: 0;}
+				100% {left:80%; top:10%; opacity: 1;}
+			}
+
+		#z5 {width: 400px; position: absolute; left: 58%; top:0%; animation: blink3 normal 20s infinite ease-in-out; opacity: 0; cursor:pointer}
+
+		@keyframes blink3 {
+				0%{opacity: 0;}
+				20% {opacity: 1;}
+				40% {opacity: 0;}
+				60% {opacity: 1;}
+				80% {opacity: 0;}
+				100% {width: 800px; opacity: 1;}
+			}
+
+		#z6 {width: 400px; position: absolute; left: 13%; animation: mov10 normal 20s infinite ease-in-out; cursor:pointer}
+
+		@keyframes mov10{
+				0%{right: :0%; top:10px; opacity: 0;}
+				20% {opacity: 1;}
+				40% {opacity: 0;}
+				60% {opacity: 1;}
+				80% {opacity: 0;}
+				100% {width: 600px; right:90%; top:0%; opacity: 1;}
+			}	
+
+		#z7 {width: 650px; position: absolute; left: 60%; top:20%; animation: blink4 normal 20s infinite ease-in-out; cursor:pointer}
+
+		@keyframes blink4{
+				0%{opacity: 0;}
+				20% {opacity: 1;}
+				40% {opacity: 0;}
+				60% {opacity: 1;}
+				80% {opacity: 0;}
+				100% {opacity: 1;}
+			}	
+
+		#z8 {width: 600px; position: absolute; left: 45%; top:0%; animation: blink5 normal 20s infinite ease-in-out; cursor:pointer}
+
+		@keyframes blink5{
+				0%{opacity: 0;}
+				20% {opacity: 1;}
+				40% {opacity: 0;}
+				60% {opacity: 1;}
+				80% {opacity: 0;}
+				100% {opacity: 1;}
+			}	
+
+		#z9 {width: 800px; position: absolute; left: 0%; top:5%; animation: blink5 normal 20s infinite ease-in-out; cursor:pointer}
+
+		@keyframes blink5{
+				0%{opacity: 0;}
+				20% {opacity: 1;}
+				40% {opacity: 0;}
+				60% {opacity: 1;}
+				80% {opacity: 0;}
+				100% {opacity: 1;}
+			}	
+
+		#z10 {width: 600px; position: absolute; left: 60%; top:30%; transform: translateX(-40%); animation: blink6 normal 20s infinite ease-in-out; cursor:pointer}
+
+		@keyframes blink6{
+				0%{opacity: 0;}
+				20% {opacity: 1;}
+				40% {opacity: 0;}
+				60% {opacity: 1;}
+				80% {opacity: 0;}
+				100% {opacity: 1;}	
+			}	
+
+		#sound {top:70%; left:50%; transform: translate(-50%,-30%); position: absolute; z-index:1; opacity: 0.2;}	
+		
+	</style>
+</head>
+<body>
+	<audio id="sound" controls>
+		<source src="sound.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="shoot" src="shoot.mp3"></audio>
+	<img id="w1" src="w1.png">
+	<img id="w2" src="w2.png">
+	<div id="text" onclick="a()" style="cursor:pointer">
+		<div id="box1">W</div>
+		<div id="box2">A</div>
+		<div id="box3">R</div>
+		<div id="box4">N</div>
+		<div id="box5">I</div>
+		<div id="box6">N</div>
+		<div id="box7">G</div>
+	</div>
+
+	<div id="zombi">
+		<img id="z1" onclick="b()" src="z1.png" style="z-index: 99;">
+		<img id="z2" onclick="c()" src="z2.png" style="z-index: 92;">
+		<img id="z3" onclick="d()" src="z3.png" style="z-index: 97;">
+		<img id="z4" onclick="e()" src="z4.png" style="z-index: 96;">
+		<img id="z5" onclick="f()" src="z5.png" style="z-index: 95;">
+		<img id="z6" onclick="g()" src="z6.png" style="z-index: 94;">
+		<img id="z7" onclick="h()" src="z7.png" style="z-index: 93;">
+		<img id="z8" onclick="i()" src="z8.png" style="z-index: 98;">
+		<img id="z9" onclick="j()" src="z9.png" style="z-index: 91;">
+		<img id="z10" onclick="k()" src="z10.png" style="z-index: 90;">
+	</div>
+	
+	<script>
+		function a(){
+			w1.style.transform ="translate(-100%,-50%)"
+			w2.style.transform ="translate(100%,-50%)"
+			text.style.opacity = 0;
+			zombi.style.opacity = 1;
+			sound.style.opacity = 0;
+			}
+
+		function b(){
+			z1.style.animationPlayState = "paused";
+			z1.style.display = "none";
+			shoot.currentTime = 0;
+			shoot.play();
+			shoot.timeupdate();
+			
+		}
+		function c(){
+			z2.style.animationPlayState = "paused";
+			z2.style.display = "none";
+			shoot.currentTime = 0;
+			shoot.play();
+			shoot.timeupdate();
+		}
+		function d(){
+			z3.style.animationPlayState = "paused";
+			z3.style.display = "none";
+			shoot.currentTime = 0;
+			shoot.play();
+			shoot.timeupdate();
+			
+		}
+		function e(){
+			z4.style.animationPlayState = "paused";
+			z4.style.display = "none";
+			shoot.currentTime = 0;
+			shoot.play();
+			shoot.timeupdate();
+		}
+		function f(){
+			z5.style.animationPlayState = "paused";
+			z5.style.display = "none";
+			shoot.currentTime = 0;
+			shoot.play();
+			shoot.timeupdate();
+			
+
+		}
+		function g(){
+			z6.style.animationPlayState = "paused";
+			z6.style.display = "none";
+			shoot.currentTime = 0;
+			shoot.play();
+			shoot.timeupdate();
+		}
+		function h(){
+			z7.style.animationPlayState = "paused";
+			z7.style.display = "none";
+			shoot.currentTime = 0;
+			shoot.play();
+			shoot.timeupdate();
+			
+		}
+		function i(){
+			z8.style.animationPlayState = "paused";
+			z8.style.display = "none";
+			shoot.currentTime = 0;
+			shoot.play();
+			shoot.timeupdate();
+			
+		}
+		function j(){
+			z9.style.animationPlayState = "paused";
+			z9.style.display = "none";
+			shoot.currentTime = 0;
+			shoot.play();
+			shoot.timeupdate();
+			
+		}
+		function k(){
+			z10.style.animationPlayState = "paused";
+			z10.style.display = "none";
+			shoot.currentTime = 0;
+			shoot.play();
+			shoot.timeupdate();
+
+		}
+
+		
+
+	</script>
+
+
+	<script type="text/javascript">
+			var text {"WARNING"};
+			var newText = text.split("");
+			for(var i = 0; i < newText.length; i++){
+				var a = document.getElementById('fly-in-text')
+				var b = a.cloneNode(true);
+				b.innerHTML = newText[1];
+				b.style.left = 200*i +"px";
+				b.style.opacity = 1;
+				b.style.animationDelay = i*0.1+"s";
+				document.body.appendChild(b);
+			}
+			box1.style.anmationPlayState = "running";
+			box2.style.anmationPlayState = "running";
+			box3.style.anmationPlayState = "running";
+			box4.style.anmationPlayState = "running";
+			box5.style.anmationPlayState = "running";
+			box6.style.anmationPlayState = "running";
+			box7.style.anmationPlayState = "running";
+		}
+	</script>
+
+
+</body>
+</html>
