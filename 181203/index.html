@@ -1,1 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+	<meta charset="utf-8">
+	
+	<title>earth</title>
+	<style type="text/css">
 
+
+		*{margin:0; padding:0;}
+		body {background:black;}
+		#main {width: 100%; color:white; font-family: 'Noto Serif KR', sans-serif; font-size: 70px; position: absolute; z-index: 0; letter-spacing: 8px; opacity: 0.5;}
+
+		#header {width: 1250px; height: 400px; z-index: 95; position: absolute; }
+		h1{color:transparent; font-size: 500px; font-family: 'VT323', monospace; background-image: url(gf.png); -webkit-background-clip: text; top: 50px; text-align: center; line-height: 400px; z-index: 95;}
+		
+		#imgwrap1 {width: 800px; margin: auto 0; left: 50%; transform: translateX(-50%); position: absolute; top: 300px; z-index: 97;}
+
+		#textwrap1 {background: red; width: 120px; height: 50px; font-size: 24px; font-family: 'VT323', monospace; margin: auto 0; position: absolute; right: 10%; top:170px; text-align: center; line-height: 50px; margin: 0 auto;}
+
+		#textwrap2 {position: absolute; right: 10%; top: 400px; z-index: 99;   }
+
+		p {width: 100%; font-size: 40px; font-family: 'VT323', monospace;  color: #ff0de5; white-space: nowrap; animation: typing 3s steps(35, end); overflow: hidden;}
+
+		@keyframes typing {
+			from{ width: 0; }
+			
+		}
+
+		p:nth-child(2) {
+			animation: typingtwo 4s steps(35,end);
+		}
+		p:nth-child(3) {
+			animation: typingtwo 5s steps(35,end);
+		}
+		p:nth-child(4) {
+			animation: typingtwo 6s steps(35,end);
+		}
+		p:nth-child(5) {
+			animation: typingtwo 7s steps(35,end);
+		}
+		p:nth-child(6) {
+			animation: typingtwo 8s steps(35,end);
+		}
+		p:nth-child(7) {
+			animation: typingtwo 9s steps(35,end);
+		}
+		p:nth-child(8) {
+			animation: typingtwo 10s steps(35,end);
+		}
+		p:nth-child(9) {
+			animation: typingtwo 11s steps(35,end);
+		}
+		p:nth-child(10) {
+			animation: typingtwo 12s steps(35,end);
+		}
+		p:nth-child(11) {
+			animation: typingtwo 13s steps(35,end);
+		}
+		p:nth-child(12) {
+			animation: typingtwo 14s steps(35,end);
+		}
+		p:nth-child(13) {
+			animation: typingtwo 15s steps(35,end);
+		}
+		p:nth-child(14) {
+			animation: typingtwo 16s steps(35,end);
+		}
+		p:nth-child(15) {
+			animation: typingtwo 17s steps(35,end);
+		}
+		p:nth-child(16) {
+			animation: typingtwo 18s steps(35,end);
+		}
+		p:nth-child(17) {
+			animation: typingtwo 19s steps(35,end);
+		}
+		p:nth-child(18) {
+			animation: typingtwo 20s steps(35,end);
+		}
+		p:nth-child(19) {
+			animation: typingtwo 21s steps(35,end);
+		}
+		p:nth-child(20) {
+			animation: typingtwo 22s steps(35,end);
+		}
+		
+
+		@keyframes typingtwo {
+			0%{width: 0;}
+			50% {width: 0;}
+			100% {width: 100%;}
+		}
+
+	
+		#cursor {animation: blink .6s infinite;}
+
+		@keyframes blink{
+			from {opacity: 0;}
+			to{opacity: 1;}
+		}
+
+		#wrap2 {width: 1920px; height: 1000px; position: absolute; top: 1400px; margin: 0 auto;}
+
+		#sub1 {color: red; font-size: 50px; font-family: 'VT323', monospace; left: 12%; position: absolute; animation: random .5s linear infinite; top: 90px;}
+
+		@keyframes random {
+			0% {color: red;}
+			20% {color: yellow;}
+			40% {color: magenta;}
+			60% {color: blue;}
+			80% {color: purple;}
+			100% {color: green;}
+
+		}
+
+		#movie1 {width: 800px; position: absolute; top: 38px; right: 5%; z-index: 96; opacity: .5; cursor: pointer;}
+
+		#line1 {width: 700px; height: 473px; border: 1px solid #ffffff; position: absolute; right: 0%;}
+
+		#movie2 {width: 700px; position: absolute;  right: 0%; opacity: 0;}
+
+		#line2 {width: 670px; height: 480px; border: 1px solid #ffffff; position: absolute; top: 336px; left: 12%;}
+
+		#line2 #sub2 { font-family: 'Noto Serif KR', sans-serif; font-size:70px; position: absolute; letter-spacing: 5px; color:red; line-height:100px; white-space: nowrap; animation: typing 3s steps(35, end); overflow: hidden; }
+
+		#textwrap3 {background: red; width: 120px; height: 50px; font-size: 24px; font-family: 'VT323', monospace; margin: auto 0; position: absolute; left: 10%; top:1300px; text-align: center; line-height: 50px; margin: 0 auto;}
+
+
+		#textwrap4 {background: red; width: 120px; height: 50px; font-size: 24px; font-family: 'VT323', monospace; margin: auto 0; position: absolute; left: 10%; text-align: center; line-height: 50px; margin: 0 auto;}
+
+		#textwrap5 {background: red; width: 120px; height: 50px; font-size: 24px; font-family: 'VT323', monospace; margin: auto 0; position: absolute; left: 10%; top:100px; text-align: center; line-height: 50px; margin: 0 auto;}
+
+		#wrap3 {width: 100%; height: 1000px; position: absolute; top: 2500px; }
+		
+		#imgwrap2 {width: 500px; left: 50%; transform: translateX(-50%); position: absolute; margin: 0 auto; top: 10%; z-index: 94;}
+
+		#imgwrap3 {width: 600px; left: 5%; position: absolute; top: 40%
+			;}
+		#imgwrap4 {width: 600px; right: 5%; position: absolute; top: 40%;}
+
+		#sub3 {color: red; font-family: 'VT323', monospace; font-size: 50px; left: 50%; transform: translateX(-50%); position: absolute; top: 35%; z-index: 95; }
+
+		#wrap4 {background:blue; width: 100%; height: 800px; position: absolute; top: 3400px;  }
+
+
+
+
+		
+		
+		
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1>ADDICT</h1>
+	</div>
+	<div id="main">
+		모두들잠든새벽세시나는옥상에올라왔죠하얀색십자가붉은빛십자가위우리동네가보여요조용한옥상어두운밤공기엄마미안해요아무도내곁에있어주지않았어요아무런잘못도나는하지않았어요왜나를미워하나요난매일밤무서운꿈에울어요왜나를미워했나요꿈에서도난달아날수없어요사실은난더살고싶었어요이제는날좀내버려두세요사실은난더살고싶었어요이제는날좀내버려두세요사실은난더살고싶었어요이제는날좀내버려두세요모두들잠든새벽세시나는옥상에올라왔죠한약색십자가붉은빛십자가우리동네가보여요내일아침에는아무도다시는나를나를모두들잠든새벽세시나는옥상에올라왔죠하얀색십자가붉은빛십자가위우리동네가보여요조용한옥상어두운밤공기엄마미안해요아무도내곁에있어주지않았어요아무런잘못도나는하지않았어요왜나를미워하나요난매일밤무서운꿈에울어요왜나를미워했나요꿈에서도난달아날수없어요사실은난더살고싶었어요이제는날좀내버려두세요사실은난더살고싶었어요이제는날좀내버려두세요사실은난더살고싶었어요이제는날좀내버려두세요모두들잠든새벽세시나는옥상에올라왔죠한약색십자가붉은빛십자가우리동네가보여요내일아침에는아무도다시는나를나를모두들잠든새벽세시나는옥상에올라왔죠하얀색십자가붉은빛십자가위우리동네가보여요조용한옥상어두운밤공기엄마미안해요아무도내곁에있어주지않았어요아무런잘못도나는하지않았어요왜나를미워하나요난매일밤무서운꿈에울어요왜나를미워했나요꿈에서도난달아날수없어요사실은난더살고싶었어요이제는날좀내버려두세요사실은난더살고싶었어요이제는날좀내버려두세요사실은난더살고싶었어요이제는날좀내버려두세요모두들잠든새벽세시나는옥상에올라왔죠한약색십자가붉은빛십자가우리동네가보여요내일아침에는아무도다시는나를나를모두들잠든새벽세시나는옥상에올라왔죠하얀색십자가붉은빛십자가위우리동네가보여요조용한옥상어두운밤공기엄마미안해요아무도내곁에있어주지않았어요아무런잘못도나는하지않았어요왜나를미워하나요난매일밤무서운꿈에울어요왜나를미워했나요꿈에서도난달아날수없어요사실은난더살고싶었어요이제는날좀내버려두세요사실은난더살고싶었어요이제는날좀내버려두세요사실은난더살고싶었어요이제는날좀내버려두세요모두들잠든새벽세시나는옥상에올라왔죠한약색십자가붉은빛십자가우리동네가보여요내일아침에는아무도다시는나를나를모두들잠든새벽세시나는옥상에올라왔죠하얀색십자가붉은빛십자가위우리동네가보여요조용한옥상어두운밤공기엄마미안해요아무도내곁에있어주지않았어요아무런잘못도나는하지않았어요왜나를미워하나요난매일밤무서운꿈에울어요왜나를미워했나요꿈에서도난달아날수없어요사실은난더살고싶었어요이제는날좀내버려두세요사실은난더살고싶었어요이제는날좀내버려두세요사실은난더살고싶었어요이제는날좀내버려두세요모두들잠든새벽세시나는옥상에올라왔죠한약색십자가붉은빛십자가우리동네가보여요내일아침에는아무도다시는나를나를모두들잠든새벽세시나는옥상에올라왔죠하얀색십자가붉은빛십자가위우리동네가보여요조용한옥상어두운밤공기엄마미안해요아무도내곁에있어주지않았어요아무런잘못도나는하지않았어요왜나를미워하나요난매일밤무서운꿈에울어요왜나를미워했나요꿈에서도난달아날수없어요사실은난더살고싶었어요이제는날좀내버려두세요사실은난더살고싶었어요이제는날좀내버려두세요사실은난더살고싶었어요이제는날좀내버려두세요모두들잠든새벽세시나는옥상에올라왔죠한약색십자가붉은빛십자가우리동네가보여요내일아침에는아무도다시는나를나를모두들잠든새벽세시나는옥상에올라왔죠하얀색십자가붉은빛십자가위우리동네가보여요조용한옥상어두운밤공기엄마미안해요아무도내곁에있어주지않았어요아무런잘못도나는하지않았어요왜나를미워하나요난매일밤무서운꿈에울어요왜나를미워했나요꿈에서도난달아날수없어요사실은난더살고싶었어요이제는날좀내버려두세요사실은난더살고싶었어요이제는날좀내버려두세요사실은난더살고싶었어요이제는날좀내버려두세요모두들잠든새벽세시나는옥상에올라왔죠한약색십자가붉은빛십자가우리동네가보여요내일아침에는아무도다시는나를나를
+	</div>
+	
+		
+		
+		<img id="imgwrap1" src="eye.png">
+		<div id="textwrap1">
+			0417
+		</div>
+		<div id="textwrap2">
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<br>
+			</p>
+			<p>
+				The whole thing has began from you.<span id="cursor">ㅣ</span>
+			</p>	
+		</div>
+		<div id="textwrap3">
+			0419
+		</div>
+	<div id="wrap2">
+		<img id="movie1" onmouseover="visible(this)" onmouseout="unvisible(this)" border="0" src="movie_image1.png">
+		<div id="line1">
+			<img id="movie2" src="movie_image2.png">
+		</div>
+
+		<div id="sub1">
+			I am starting exhausted and giving things up.
+		</div>
+	
+		<div id="line2">
+			<p id="sub2">
+			내버려두세요모두들<br>
+			약색십자가붉은빛십<br>
+			아무도다시는나를나<br>
+			라왔죠하얀색십자가<br>
+			용한옥상어두운밤공
+			</p>	
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function visible(x) {
+   			x.style.opacity =0 ;
+   			movie2.style.opacity=1;
+			}
+		function unvisible(x) {
+   			x.style.opacity =.5;
+   			movie2.style.opacity=0;
+			}
+
+	</script>
+
+	<div id="wrap3">
+		<div id="textwrap4">
+				0423
+		</div>
+		<div id="sub3">
+			SELF-PORTRAIT WITH CANDY.
+		</div>
+		<img id="imgwrap2" src="face.png">
+		<img id="imgwrap3" src="mz.png">
+		<img id="imgwrap4" src="mz.png">
+
+	</div>
+
+	<div id="wrap4">
+		<div id="textwrap5">
+			0429
+		</div>
+		
+	</div>
+		
+	
+
+</body>
+</html>
