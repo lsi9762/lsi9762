@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>earth</title>
+	<style type="text/css">
+
+
+		*{margin:0; padding:0;}
+		body {background:black;}
+		ul, ol {list-style: none;}
+		a {text-decoration: none; color: white;}
+		
+		#menu1{width:100px; height: 40px; position: absolute; top: 170px; left: 1770px; font-size: 10pt; color: white; font-family: 'Noto Serif KR', sans-serif; transform: rotate(90deg); font-weight: bolder;}
+
+		#menu1 :hover {color: red;}
+
+		#menu2{width:100px; height: 40px; position: absolute; top: 310px; left: 1770px; font-size: 10pt; color:white; font-family: 'Noto Serif KR', sans-serif; transform: rotate(90deg); font-weight: bolder;}
+
+		#menu2 :hover {color: red;}
+
+		#header {z-index: 95; position: absolute; font-size: 30pt;  font-family: 'Noto Serif KR', sans-serif; top: 15px; left: 30px;color: white; font-weight: bolder; }
+		
+		
+		#imgwrap1 {width: 800px; margin: auto 0; left: 50%; transform: translateX(-50%); position: absolute; top: 300px; z-index: 97;}
+
+		#textwrap1 {background: red; width: 120px; height: 50px; font-size: 24px; font-family: 'VT323', monospace; margin: auto 0; position: absolute; right: 10%; top:170px; text-align: center; line-height: 50px; margin: 0 auto;}
+
+		#textwrap2 {position: absolute; right: 10%; top: 400px; z-index: 99;   }
+
+		p {width: 100%; font-size: 40px; font-family: 'VT323', monospace;  color: #ff0de5; white-space: nowrap; animation: typing 3s steps(35, end); overflow: hidden;}
+
+		@keyframes typing {
+			from{ width: 0; }
+			
+		}
+
+		p:nth-child(2) {
+			animation: typingtwo 4s steps(35,end);
+		}
+		p:nth-child(3) {
+			animation: typingtwo 5s steps(35,end);
+		}
+		p:nth-child(4) {
+			animation: typingtwo 6s steps(35,end);
+		}
+		p:nth-child(5) {
+			animation: typingtwo 7s steps(35,end);
+		}
+		p:nth-child(6) {
+			animation: typingtwo 8s steps(35,end);
+		}
+		p:nth-child(7) {
+			animation: typingtwo 9s steps(35,end);
+		}
+		p:nth-child(8) {
+			animation: typingtwo 10s steps(35,end);
+		}
+		p:nth-child(9) {
+			animation: typingtwo 11s steps(35,end);
+		}
+		p:nth-child(10) {
+			animation: typingtwo 12s steps(35,end);
+		}
+		p:nth-child(11) {
+			animation: typingtwo 13s steps(35,end);
+		}
+		p:nth-child(12) {
+			animation: typingtwo 14s steps(35,end);
+		}
+		p:nth-child(13) {
+			animation: typingtwo 15s steps(35,end);
+		}
+		p:nth-child(14) {
+			animation: typingtwo 16s steps(35,end);
+		}
+		p:nth-child(15) {
+			animation: typingtwo 17s steps(35,end);
+		}
+		p:nth-child(16) {
+			animation: typingtwo 18s steps(35,end);
+		}
+		p:nth-child(17) {
+			animation: typingtwo 19s steps(35,end);
+		}
+		p:nth-child(18) {
+			animation: typingtwo 20s steps(35,end);
+		}
+		p:nth-child(19) {
+			animation: typingtwo 21s steps(35,end);
+		}
+		p:nth-child(20) {
+			animation: typingtwo 22s steps(35,end);
+		}
+		
+
+		@keyframes typingtwo {
+			0%{width: 0;}
+			50% {width: 0;}
+			100% {width: 100%;}
+		}
+
+	
+		#cursor {animation: blink .6s infinite;}
+
+		@keyframes blink{
+			from {opacity: 0;}
+			to{opacity: 1;}
+		}
+
+		#wrap2 {width: 1920px; height: 1000px; position: absolute; top: 1400px; margin: 0 auto;}
+
+		#sub1 {color: red; font-size: 50px; font-family: 'VT323', monospace; left: 12%; position: absolute; animation: random .5s linear infinite; top: 200px;}
+
+		@keyframes random {
+			0% {color: red;}
+			20% {color: yellow;}
+			40% {color: magenta;}
+			60% {color: blue;}
+			80% {color: purple;}
+			100% {color: green;}
+
+		}
+
+		#movie1 {width: 800px; position: absolute; top: 38px; right: 5%; z-index: 96; opacity: .5; cursor: pointer;}
+
+		#line1 {width: 700px; height: 473px; border: 1px solid #ffffff; position: absolute; right: 0%;}
+
+		#movie2 {width: 700px; position: absolute;  right: 0%; opacity: 0;}
+
+		#line2 {width: 670px; height: 480px; border: 1px solid #ffffff; position: absolute; top: 336px; left: 12%;}
+
+		#line2 #sub2 { font-family: 'Noto Serif KR', sans-serif; font-size:70px; position: absolute; letter-spacing: 5px; color:red; line-height:100px; white-space: nowrap; animation: typing 3s steps(35, end); overflow: hidden; }
+
+		#textwrap3 {background: red; width: 120px; height: 50px; font-size: 24px; font-family: 'VT323', monospace; margin: auto 0; position: absolute; left: 10%; top:1200px; text-align: center; line-height: 50px; margin: 0 auto;}
+
+
+		#textwrap4 {background: red; width: 120px; height: 50px; font-size: 24px; font-family: 'VT323', monospace; margin: auto 0; position: absolute; left: 10%; text-align: center; line-height: 50px; margin: 0 auto;}
+
+		
+		#wrap3 {width: 100%; height: 1000px; position: absolute; top: 2000px;}
+		
+		#imgwrap2 {width: 500px; left: 50%; transform: translateX(-50%); position: absolute; margin: 0 auto; top: 10%; z-index: 94; animation: blink 1s linear infinite; transition: opacity ease 1s;}
+
+		@keyframes blink{
+			from{opacity: 1;}
+			to{opacity: 0;}
+		}
+
+		#imgwrap3 {width: 600px; left: 5%; position: absolute; top: 40%
+			;}
+		#imgwrap4 {width: 600px; right: 5%; position: absolute; top: 40%;}
+
+		#sub3 {left: 50%; transform: translateX(-50%); position: absolute; top: 35%; z-index: 95; }
+		#sub3 p {color: red; font-family: 'VT323', monospace; font-size: 50px;  white-space: nowrap; animation: typing 3s steps(35, end) infinite; overflow: hidden;}
+
+		@keyframes typing {
+			from{ width: 0; }
+		}
+
+		#wrap4 { width: 100%; height: 1000px; width:400px;  position: absolute; top: 3200px; }
+
+		#textwrap5 {background: red; width: 120px; height: 50px; font-size: 24px; font-family: 'VT323', monospace; margin: auto 0; left: 10%; top:100px; text-align: center; line-height: 50px; margin: 0 auto; z-index: 94; position: absolute;}
+
+		#parallax1 {width: 1920px; height: 1000px; background-image: url("parallax1.png"); min-height: 500px; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;  color: red; font-size: 30pt; font-family: 'Noto Serif KR', sans-serif; text-align: center; line-height: 1000px; font-weight: bolder;}
+
+
+		#sub4 {width: 100px; height: 100px; position: absolute; left: 600px; font-family: 'Noto Serif KR', san-serif; font-size: 10pt; color:#ff61f5; animation: up 1s infinite; z-index: 98; top: 6000px;}
+
+		@keyframes up {
+			from {top: 6000px;}
+			to {top: 4200px;}
+		}
+
+		#wrap5 {width: 100%; height: 1500px; position: absolute; top: 4300px; }
+
+		#sub5 {width:500px; height: 100px; position: absolute; top: 650px; font-family: 'Noto Serif KR', san-serif; font-size: 30pt; color:#ff61f5; font-weight: bolder; line-height: 100px; text-align: center; cursor: pointer; left: 50%; transform: translateX(-50%); z-index: 99; }
+
+		#imgwrap5 img {width: 500px; position: absolute; opacity: 0;}
+
+		#nimg1 {left: 100px; }
+		#nimg2 {left: 400px; top: 200px;}
+		#nimg3 {left: 700px; top: -50px;}
+		#nimg4 {right: 100px; top: 400px;}
+		#nimg5 {width: 380px; left: 500px; top: 450px;}
+		#nimg6 {width: 200px; left: 10px; top: 500px;}
+		#nimg7 {width: 300px; left: 850px; top: 480px;}
+		#nimg8 {left: 1000px; top: 620px;}
+		#nimg9 {right: 150px; top: -70px;}
+		#nimg10 {right: 10px; top: 700px;}
+
+		#wrap6 {width: 100%; height: 1000px; position: absolute; top: 5500px; }
+		#drag2 {width: 500px; height: 500px; position: absolute; z-index: 99;}
+		#textwrap7 {width:500px; height: 100px; font-size: 20pt; color:#ff61f5; font-family: 'Noto Serif KR', san-serif; position: absolute; top: 700px; left: 200px;}
+		#textwrap span {width: 500px; height: 100px; font-family: 'Noto Serif KR', san-serif; font-size: 20pt; color:#ff61f5;}
+		#imgwrap6 {width: 500px; position: absolute; left: 50%; transform: translateX(-50%); top: 400px; z-index: 99;}
+		#dragtarget {width: 400px; position: absolute;top: 400px; left: 100px;}
+		#textwrap6 {width: 100%; height: 1000px; position: absolute; font-family: 'Noto Serif KR', san-serif; font-size: 50pt; color: #41ff4e; opacity: 0; }
+
+		#pooter {width: 100%; height: 160px; background: red; font-family: 'Noto Serif KR', sans-serif; font-size: 10pt;  font-weight: bold; color:#ff61f5; position: absolute; top: 7000px; text-align: center; line-height: 20pt; color: black; }
+
+	</style>
+</head>
+<body>
+	<div id="header">
+		고통이 시작됐다. 나의 세계가 끝났다.
+	</div>
+	<ul>
+		<li id="menu1">
+			<a href="himmel.html">
+				중독의 시작
+			</a>
+		</li>
+
+		<li id="menu2">
+			<a href="earth.html">
+				중독의 결말
+			</a>
+		</li>
+	</ul>
+	<img id="imgwrap1" src="eye.png">
+	<div id="textwrap1">
+		4.17
+	</div>
+	
+	<div id="textwrap2">
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<br>
+		</p>
+		<p>
+			The whole thing has began from you.<span id="cursor">ㅣ</span>
+		</p>	
+	</div>
+	
+	<div id="textwrap3">
+		4.19
+	</div>
+	
+	<div id="wrap2">
+		<img id="movie1" onmouseover="visible(this)" onmouseout="unvisible(this)" border="0" src="movie_image1.png">
+		<div id="line1">
+			<img id="movie2" src="movie_image2.png">
+		</div>
+
+		<div id="sub1">
+			I am starting exhausted and giving things up.
+		</div>
+	
+	</div>
+
+	<div id="wrap3">
+		<div id="textwrap4">
+			4.23
+		</div>
+		<div id="sub3">
+			<p>
+			SELF-PORTRAIT WITH CANDY.
+			</p>
+		</div>
+		<img id="imgwrap2" src="face.png">
+		<img id="imgwrap3" src="mz.png">
+		<img id="imgwrap4" src="mz.png">
+	</div>
+
+	<div id="wrap4">
+		<div id="textwrap5">4.29</div>	
+		<div id="parallax1">모든건 너로인해 시작됐다.</div>
+	</div>
+	<div id="sub4">살려줘</div>
+	<div id="wrap5">
+		<div id="sub5" onclick="a()">다시 느낄 수 있다면</div>
+		<div id="imgwrap5">
+			<img id="nimg1" src="n1.png">
+			<img id="nimg2" src="n2.png">
+			<img id="nimg3" src="n3.png">
+			<img id="nimg4" src="n4.png">
+			<img id="nimg5" src="n5.png">
+			<img id="nimg6" src="n6.png">
+			<img id="nimg7" src="n7.png">
+			<img id="nimg8" src="n8.png">
+			<img id="nimg9" src="n9.png">
+			<img id="nimg10" src="n10.png">
+		</div>
+	</div>	
+	<div id="wrap6">
+		<div id="droptarget2" ondrop="drop2(event)" ondragover="allowDrop2(event)">
+ 			<img id="imgwrap6" src="djmv.gif">
+ 		</div>
+		
+		<div id="drag2">
+			<img ondragstart="dragStart2(event)" draggable="true" id="dragtarget" src="coca.jpg">
+			<p id="textwrap7">
+				<span>한 번만 더 할 수 있게 해줘.</span><br>(Drag it to gif)
+			</p>
+		</div>
+		<div id="textwrap6">
+			옛날 옛적 캔디와 댄이 살았습니다. 그 해에는 모든게 뜨거웠어요. 그는 어디든 올라가며 그녀를 위해 뭐든 했죠. 수많은 새들, 작은 새가 그녀의 머리를 꾸며줬고 모든것이 훌륭했어요. 어느날 밤, 침대가 불타올랐어요. 그는 잘생겼고 능숙한 범죄자였죠. 우리는 햇빛과 초콜렛으로 살았어요. 대단한 환희의 오후였어요. 무적의 대니. 캔디가 사라졌죠. 태양의 마지막 줄기가 비추고 상어처럼 헤엄치며. 이번엔 자기식대로 할거야. 니가 내인생에 아주 빨리 들어온게 좋았어. 우리는 기쁨의 진흙에 뒹굴었어요. 나는 젖은 다리로 포기하게 됐죠. 그러다 틈이 생겨났어요. 온 천지가 기울고 이건 사업이야. 우리가 쫓는거지. 밤이 오면 다시는 잘 수 없어. 물속의 괴물이 어두운 자연이 고양이 닭과 강낭콩 어디를 보아도 가끔은 니가 미워. 진심은 아니었어. 침대 옆의 꽃 니 머리를 다쳤어. 침대 뒤에서.아기는 아침에 죽었어요 이름을 지어줬어요. 토마스. 불쌍한 어린 것. 그 애 심장은 북처럼 뛰었어요.
+		</div>
+	</div>
+
+	<div id="pooter">
+ 		<br>
+ 		헤로인, 마약 중독 후 시간의 흐름에 따라서 시각적으로 보여준 페이지.<br><br>
+
+ 		dltjsdl582@gmail.com<br>
+ 		lsi9762@github.io<br>
+
+ 	</div>
+
+
+
+
+	
+	<script type="text/javascript">
+		function visible(x) {
+   			x.style.opacity =0 ;
+   			movie2.style.opacity=1;
+			}
+		function unvisible(x) {
+   			x.style.opacity =.5;
+   			movie2.style.opacity=0;
+			}
+
+		var total = 0;
+		for(var i=0;i<50;i++){
+
+			var j = document.getElementById("sub4");
+			var newsub4 = j.cloneNode(true);
+			newsub4.style.left = Math.random()*window.innerWidth + "px";
+			newsub4.style.top = Math.random()*window.innerHeight + "px";
+			newsub4.style.animationDuration = parseInt(Math.random()*30)+"s";
+			
+			document.body.appendChild(newsub4);
+			}	
+
+		function a() {
+			sub5.style.opacity = 0;
+			nimg1.style.opacity = 1;
+			nimg2.style.opacity = 1;
+			nimg3.style.opacity = 1;
+			nimg4.style.opacity = 1;
+			nimg5.style.opacity = 1;
+			nimg6.style.opacity = 1;
+			nimg7.style.opacity = 1;
+			nimg8.style.opacity = 1;
+			nimg9.style.opacity = 1;
+			nimg10.style.opacity = 1;
+		}	
+
+		function dragStart2(event) {
+    		event.dataTransfer.setData("Text", event.target.id);
+    		textwrap6.style.opacity= 1;
+    		textwrap7.style.opacity = 0;
+    		dragtarget.style.opacity = 0;
+
+    	}function allowDrop2(event) {
+    		event.preventDefault();
+    		document.getElementById("demo").innerHTML = "The p element is OVER the droptarget.";
+    		event.target.style.opacity = 1;
+
+		}function drop2(event) {
+    		event.preventDefault();
+    		var data = event.dataTransfer.getData("Text");
+    		event.target.appendChild(document.getElementById(data));
+			event.target.style.opacity = 0;
+			textwrap6.style.opacity= 1;
+	
+		}
+		
+	</script>
+</body>
+</html>
